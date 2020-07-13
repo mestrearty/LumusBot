@@ -1,0 +1,32 @@
+{
+  "name": "twitchbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "build": "tsc --build tsconfig.json",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Ventura",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^3.0.1",
+    "@types/node": "^14.0.14",
+    "axios": "^0.19.2",
+    "kbm-robot": "0.0.4",
+    "nodemon": "^2.0.2",
+    "robotjs": "^0.6.0",
+    "say": "^0.16.0",
+    "sound-play": "^1.0.5",
+    "text2wav": "0.0.13",
+    "tmi.js": "^1.5.0",
+    "tsc": "^1.20150623.0",
+    "tsc-watch": "^4.2.3",
+    "typescript": "3.8.3"
+  },
+  "devDependencies": {
+    "@types/tmi.js": "^1.4.0"
+  }
+}
