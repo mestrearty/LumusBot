@@ -13,8 +13,8 @@ import { timeInLive } from "../commands/timeInLive.command";
 const commandsObjectList = {
   "!rollDice": { currency: 10, commandFunction: rollDice },
   "!play": { currency: 4, commandFunction: playSound },
-  //"!moveMouse": { currency: 35, commandFunction: moveMouse },
-  //"!move": { currency: 35, commandFunction: moveKeyboard },
+  "!moveMouse": { currency: 35, commandFunction: moveMouse },
+  "!move": { currency: 35, commandFunction: moveKeyboard },
   "!wallet": { currency: 0, commandFunction: wallet },
   "!liveTime": { currency: 0, commandFunction: timeInLive },
 };

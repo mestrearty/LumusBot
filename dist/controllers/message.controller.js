@@ -4,6 +4,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const twitchClient_1 = require("../twitchClient");
 //middlewares
 const spendTime_util_1 = require("../utils/spendTime.util");
+//commands
+const moveKeyboard_command_1 = require("../commands/moveKeyboard.command");
+const moveMouse_command_1 = require("../commands/moveMouse.command");
 const rolldice_command_1 = require("../commands/rolldice.command");
 const wallet_command_1 = require("../commands/wallet.command");
 const playSonuds_command_1 = require("../commands/playSonuds.command");
@@ -11,8 +14,8 @@ const timeInLive_command_1 = require("../commands/timeInLive.command");
 const commandsObjectList = {
     "!rollDice": { currency: 10, commandFunction: rolldice_command_1.rollDice },
     "!play": { currency: 4, commandFunction: playSonuds_command_1.playSound },
-    //"!moveMouse": { currency: 35, commandFunction: moveMouse },
-    //"!move": { currency: 35, commandFunction: moveKeyboard },
+    "!moveMouse": { currency: 35, commandFunction: moveMouse_command_1.moveMouse },
+    "!move": { currency: 35, commandFunction: moveKeyboard_command_1.moveKeyboard },
     "!wallet": { currency: 0, commandFunction: wallet_command_1.wallet },
     "!liveTime": { currency: 0, commandFunction: timeInLive_command_1.timeInLive },
 };
